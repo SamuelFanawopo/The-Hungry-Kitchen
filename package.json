@@ -1,12 +1,11 @@
 {
   "name": "the-hungry-kitchen",
   "version": "1.0.0",
-  "description": "Recipe website developed in HTML TailwindCSS and Javascript",
+  "description": "Recipe website developed in HTML SASS and Javascript with API's ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./public/styles.css -o ./src/styles.css",
-    "watch": "tailwindcss -i ./public/styles.css -o ./src/styles.css --watch"
+    "compile": "sass --watch --no-source-map ./public/scss/main.scss ./src/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,7 @@
     "url": "https://github.com/ysfsam/The-Hungry-Kitchen/issues"
   },
   "homepage": "https://github.com/ysfsam/The-Hungry-Kitchen#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
+  "dependencies": {
+    "sass": "^1.57.1"
   }
 }
