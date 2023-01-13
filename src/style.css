@@ -1,11 +1,12 @@
 .Nav {
+  background-color: transparent;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 10px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 22px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .Nav a {
@@ -16,8 +17,8 @@
 }
 
 .Nav a:hover {
-  background-color: #fca311;
-  padding: 30px;
+  color: royalblue;
+  padding: 10px;
 }
 
 .dropbtn {
@@ -53,6 +54,6 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #fca311;
+  background-color: royalblue;
   padding: 30px;
 }
