@@ -1,3 +1,58 @@
-body {
-  background-color: red;
+.Nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  display: flex;
+}
+
+.Nav a:hover {
+  background-color: #fca311;
+  padding: 30px;
+}
+
+.dropbtn {
+  font-family: "IBM Plex Mono", monospace;
+  color: black;
+  font-size: 22px;
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fca311;
+  padding: 30px;
 }
