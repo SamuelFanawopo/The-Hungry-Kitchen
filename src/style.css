@@ -2,6 +2,7 @@ body {
   background: linear-gradient(to right top, #7d68b7, #3011b0);
   height: 100vh;
 }
+
 .Nav {
   background-color: transparent;
   display: flex;
@@ -10,8 +11,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: auto;
 }
 
@@ -72,4 +72,8 @@ h1 {
   top: 70px;
   display: inline-block;
   margin-left: 350px;
+}
+
+h2 {
+  text-decoration: underline;
 }
