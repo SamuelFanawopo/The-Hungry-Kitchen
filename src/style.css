@@ -1,1 +1,161 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #003049;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar a:hover {
+  color: #fcbf49;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.icons {
+  position: relative;
+  top: -30px;
+  left: 660px;
+  display: inline-block;
+}
+
+.searchbar {
+  position: relative;
+  top: -30px;
+  left: 625px;
+  width: 200px;
+  height: 30px;
+}
+
+.searchimg {
+  position: relative;
+  top: -55px;
+  left: 830px;
+}
+
+h2 {
+  font-size: 100px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  position: relative;
+  left: 100px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: blue;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: red;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: blue;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
