@@ -1,7 +1,10 @@
+body {
+  background-color: whitesmoke;
+}
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background-color: #003049;
+
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -9,7 +12,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 25px;
   font-family: "Quicksand", sans-serif;
 }
@@ -23,11 +26,12 @@ h1 {
   font-size: 50px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  color: black;
 }
 .icons {
   position: relative;
   top: -30px;
-  left: 660px;
+  left: 655px;
   display: inline-block;
 }
 .searchbar {
@@ -45,9 +49,10 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
+  color: black;
 }
 
 * {
@@ -59,13 +64,16 @@ h2 {
 }
 img {
   position: relative;
-  left: 100px;
+  left: 375px;
 }
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
+  margin: 10px;
   align-items: center;
+  display: flex;
+  left: -5px;
+  bottom: 20px;
 }
 
 /* Next & previous buttons */
@@ -83,11 +91,12 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: transparent;
+  margin-left: 375px;
 }
-
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 355px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -99,13 +108,16 @@ img {
 
 /* Caption text */
 .text {
-  color: blue;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 5%;
   text-align: center;
+  margin-left: -10px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 /* Number text (1/3 etc) */
@@ -115,6 +127,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  left: 400px;
 }
 
 /* The dots/bullets/indicators */
@@ -127,17 +140,20 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  bottom: -50px;
+  position: relative;
+  left: 10px;
 }
 
 .active,
 .dot:hover {
-  background-color: blue;
+  background-color: black;
 }
 
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
@@ -156,4 +172,17 @@ img {
   .text {
     font-size: 11px;
   }
+}
+
+.img1 {
+  position: relative;
+  top: -500px;
+  left: 750px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
