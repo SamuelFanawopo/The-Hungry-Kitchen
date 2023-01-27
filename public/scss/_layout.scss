@@ -1,10 +1,10 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(237, 230, 230);
 }
 .navbar {
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
-
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -12,177 +12,91 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 25px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  left: -70px;
 }
 
 .navbar a:hover {
-  color: #fcbf49;
+  color: #990011ff;
   padding: 10px;
 }
 
 h1 {
-  font-size: 50px;
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
+  font-size: 100px;
+  font-family: "Alfa Slab One", cursive;
   color: black;
-}
-.icons {
+  left: 280px;
   position: relative;
-  top: -30px;
-  left: 655px;
   display: inline-block;
 }
-.searchbar {
-  position: relative;
-  top: -30px;
-  left: 625px;
-  width: 200px;
-  height: 30px;
-}
-
-.searchimg {
-  position: relative;
-  top: -55px;
-  left: 830px;
-}
-
 h2 {
-  font-size: 50px;
+  font-size: 110px;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.mySlides {
-  display: none;
-}
-img {
+  color: #990011ff;
+  font-family: "Alfa Slab One", cursive;
   position: relative;
-  left: 375px;
-}
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: 10px;
-  align-items: center;
-  display: flex;
-  left: -5px;
-  bottom: 20px;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: transparent;
-  margin-left: 375px;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 355px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 5%;
-  text-align: center;
-  margin-left: -10px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: red;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  left: 400px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 30px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  bottom: -50px;
-  position: relative;
-  left: 10px;
-}
-
-.active,
-.dot:hover {
-  background-color: black;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
-
-.img1 {
-  position: relative;
-  top: -500px;
-  left: 750px;
-  margin: 0;
-  padding: 0;
+  top: 150px;
+  left: 80px;
   display: inline-flex;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+.first {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: none;
+  position: relative;
+  top: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.searchbar {
+  position: relative;
+  top: -245px;
+  left: 200px;
+  width: 155px;
+  height: 30px;
+  color: black;
+  border: none;
+  outline: none;
+}
+.img1 {
+  position: relative;
+  display: inline-block;
+  top: 203px;
+  left: 115px;
+}
+
+.img2 {
+  position: relative;
+  display: inline-block;
+  top: 200px;
+  left: 150px;
+}
+.img3 {
+  position: relative;
+  display: inline-block;
+  top: -155px;
+  left: 22px;
+}
+
+.img5 {
+  position: relative;
+  display: inline-block;
+  top: -450px;
+  left: 30px;
+}
+
+.par1 {
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  top: -105px;
+  left: -434px;
+  display: inline-block;
 }
