@@ -281,3 +281,36 @@ html {
   font-size: 1.5rem;
   color: #888;
 }
+
+.signup-form {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+}
+
+.signup-form-input {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.2rem solid #a79a2d;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #a79a2d;
+}
+
+.signup-form-input::placeholder {
+  color: #a79a2d;
+}
+
+.signup-form-btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #333;
+  color: #a79a2d;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
