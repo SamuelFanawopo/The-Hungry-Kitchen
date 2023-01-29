@@ -25,6 +25,11 @@ html {
   justify-content: space-evenly;
 }
 
+.section-3 {
+  background-color: #333;
+  padding: 5rem 0;
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -150,4 +155,49 @@ html {
 .section-1-icons i.change {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s 0.3s;
+}
+
+/* Section 3 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+
+.gallery-link {
+  position: relative;
+  margin: 4rem 1rem;
+}
+
+.gallery-link::before {
+  content: "";
+  position: absolute;
+  top: 2vw;
+  left: 80%;
+  width: 0.2rem;
+  height: 0;
+  background-color: #fff;
+  z-index: 10;
+  transition: height 0.5s;
+}
+
+.gallery-link::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  transition: width 0.5s;
+}
+
+.gallery-link:hover::before {
+  height: 80%;
+}
+
+.gallery-link:hover::after {
+  width: 90%;
 }
