@@ -45,7 +45,7 @@ html {
   align-items: flex-start;
 }
 
-/* Search bar */
+/* Recipe Search bar */
 .search-box {
   width: 100%;
   position: relative;
@@ -193,9 +193,13 @@ html {
 }
 
 .section-1-icons i {
-  font-size: 30rem;
+  font-size: 28rem;
   color: #a79a2d;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
   transform: translate(-50%, -50%) scale(0);
   text-shadow: 0.2rem 0.2rem 0.2rem #000;
   transition: transform 0.3s;
