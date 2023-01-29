@@ -1,3 +1,38 @@
+/* Recipe Search bar */
+.search-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 98px;
+}
+
+.search {
+  border: 3px solid #a79a2d;
+  outline: none;
+  height: 40px;
+  padding: 5px;
+  font-size: 20px;
+
+  &:focus {
+    color: #000;
+    box-shadow: 0 0 5px #a79a2d;
+  }
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #a79a2d;
+  background: #a79a2d;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -102,7 +137,7 @@
 }
 
 .section-heading {
-  font-size: 12rem;
+  font-size: 11rem;
   font-weight: 900;
   color: #fff;
   text-align: center;
@@ -112,9 +147,13 @@
 }
 
 .section-1-icons i {
-  font-size: 35rem;
+  font-size: 28rem;
   color: #a79a2d;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
   transform: translate(-50%, -50%) scale(0);
   text-shadow: 0.2rem 0.2rem 0.2rem #000;
   transition: transform 0.3s;
@@ -123,6 +162,44 @@
 .section-1-icons i.change {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s 0.3s;
+}
+
+/* Section 2 */
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 0 5%; */
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.card-name {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #888;
+  margin: 2rem 0;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+}
+
+.card-btn {
+  width: 70%;
+  background-color: #111;
+  color: #888;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  box-shadow: -0.2rem -0.2rem 0.2rem #000;
 }
 
 /* Section 3 */
@@ -287,4 +364,29 @@
   padding-top: 6rem;
   width: 100%;
   text-align: center;
+}
+
+/* 201 Button */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
