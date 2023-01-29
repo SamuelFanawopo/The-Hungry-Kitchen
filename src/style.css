@@ -224,6 +224,7 @@ html {
 
 .card-img {
   width: 100%;
+  border-radius: 7px;
 }
 
 .card-name {
@@ -231,7 +232,7 @@ html {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: #111;
+  color: #888;
   margin: 2rem 0;
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
 }
