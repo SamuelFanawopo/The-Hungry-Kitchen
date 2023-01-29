@@ -1,1 +1,105 @@
+body {
+  background-color: rgb(237, 230, 230);
+}
 
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  left: -70px;
+}
+
+.navbar a:hover {
+  color: #990011;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Alfa Slab One", cursive;
+  color: black;
+  left: 280px;
+  position: relative;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 110px;
+  text-align: center;
+  color: #990011;
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  top: 150px;
+  left: 80px;
+  display: inline-flex;
+}
+
+.first {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: none;
+  position: relative;
+  top: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.searchbar {
+  position: relative;
+  top: -245px;
+  left: 200px;
+  width: 155px;
+  height: 30px;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.img1 {
+  position: relative;
+  display: inline-block;
+  top: 203px;
+  left: 115px;
+}
+
+.img2 {
+  position: relative;
+  display: inline-block;
+  top: 200px;
+  left: 150px;
+}
+
+.img3 {
+  position: relative;
+  display: inline-block;
+  top: -155px;
+  left: 22px;
+}
+
+.img5 {
+  position: relative;
+  display: inline-block;
+  top: -450px;
+  left: 30px;
+}
+
+.par1 {
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  top: -105px;
+  left: -434px;
+  display: inline-block;
+}
