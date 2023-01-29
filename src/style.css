@@ -40,6 +40,17 @@ html {
   align-items: flex-start;
 }
 
+/* Search bar */
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -144,7 +155,7 @@ html {
 }
 
 .section-heading {
-  font-size: 12rem;
+  font-size: 11rem;
   font-weight: 900;
   color: #fff;
   text-align: center;
@@ -154,7 +165,7 @@ html {
 }
 
 .section-1-icons i {
-  font-size: 35rem;
+  font-size: 30rem;
   color: #a79a2d;
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
