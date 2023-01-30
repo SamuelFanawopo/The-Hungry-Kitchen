@@ -65,7 +65,7 @@ html {
   outline: none;
   height: 40px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 3rem;
 }
 .search:focus {
   color: #000;
@@ -466,6 +466,9 @@ html {
   .section-1-icons i {
     font-size: 25rem;
   }
+  .search-bar {
+    font-size: 25rem;
+  }
   .cards-container {
     flex-wrap: wrap;
   }
@@ -493,6 +496,9 @@ html {
     margin: 0 10rem;
   }
   .section-1-icons i {
+    font-size: 20rem;
+  }
+  .search-bar {
     font-size: 20rem;
   }
   .menu {
