@@ -21,7 +21,7 @@ document.querySelector(".menu").addEventListener("click", () => {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   searchQuery = e.target.querySelector(".search").value;
-  window.location.href="http://programminghead.com";
+  window.open("../screens/results_page.html"); // trying to display results on results page
   fetchAPI();
 });
 
