@@ -1,10 +1,3 @@
-// use webpack + instead of require for a webapp
-const nodemailer = require("nodemailer");
-const { google } = require("googleapis");
-
-const REDIRECT_URL = "https://developers.google.com/oauthplayground";
-const REFRESH_TOKEN =
-  "1//043XAJDndACDJCgYIARAAGAQSNwF-L9Ir4tmvOYeApzm97yzKw11144C4jj_9ai6CD5pqeev95wdDHeaF3JM35IVecQZL4rbuMeY";
 const searchForm = document.querySelector(".search-box");
 const testButton = document.querySelector(".test");
 const searchResultDiv = document.querySelector(".cards-container");
