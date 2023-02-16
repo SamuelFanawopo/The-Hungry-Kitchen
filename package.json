@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/ysfsam/The-Hungry-Kitchen#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
