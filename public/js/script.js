@@ -1,14 +1,12 @@
+// for recipes api
+const APP_ID = "cea45f1d";
+const APP_KEY = "6bef5531ed46bbf0c6d5a2abc08cae37";
+
 const searchForm = document.querySelector(".search-box");
-const testButton = document.querySelector(".test");
 const searchResultDiv = document.querySelector(".cards-container");
 const container = document.querySelector(".container");
 const signupForm = document.querySelector(".signup-form");
 let searchQuery = "";
-import dotenv from 'dotenv';
-dotenv.config();
-
-const APP_ID = process.env.APP_ID; 
-const APP_key = process.env.APP_KEY;
 
 signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
