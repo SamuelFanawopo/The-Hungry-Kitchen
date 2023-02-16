@@ -4,15 +4,24 @@ const searchResultDiv = document.querySelector(".cards-container");
 const container = document.querySelector(".container");
 const signupForm = document.querySelector(".signup-form");
 let searchQuery = "";
-const oAuth2Client = new google.auth.OAuth2(
-  CLIENT_ID,
-  CLIENT_SECRET,
-  REDIRECT_URL
-);
-oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
+// These id's and secrets should come from .env file.
+const CLIENT_ID = "YOUR CLIENT ID";
+const CLEINT_SECRET = "YOUR CLIENT SECRET";
+const REDIRECT_URI = "https://developers.google.com/oauthplayground";
+const REFRESH_TOKEN = "YOUR REFRESH TOKEN";
 
 const APP_ID = "cea45f1d";
 const APP_key = "6bef5531ed46bbf0c6d5a2abc08cae37";
+
+const oAuth2Client = new google.auth.OAuth2(
+  CLIENT_ID,
+  CLEINT_SECRET,
+  REDIRECT_URI
+);
+
+oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,7 +37,7 @@ document.querySelector(".menu").addEventListener("click", () => {
 
 testButton.addEventListener("click", () => {
   sendMail()
-    .then((emailResult) => console.log("Email sent...", emailResult))
+    .then((result) => console.log("Email sent...", result))
     .catch((error) => console.log(error.message));
 });
 
@@ -69,7 +78,7 @@ async function sendMail() {
 
     const mailOptions = {
       from: "THEHUNGRYKITCHEN <enzymeequity123@gmail.com>",
-      to: "genesisgeek1@gmail.com",
+      to: userEmail,
       subject: "The Hungry Kitchen",
       text: "You have signed up to receive updates when there are any new changes on the website. Thanks for supporting the website!",
       html: "<h1>You have signed up to receive updates when there are any new changes on the website. Thanks for supporting the website!</h1>",
