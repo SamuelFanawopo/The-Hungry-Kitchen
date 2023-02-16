@@ -4,9 +4,10 @@ const searchResultDiv = document.querySelector(".cards-container");
 const container = document.querySelector(".container");
 const signupForm = document.querySelector(".signup-form");
 let searchQuery = "";
-const nodemailer = require("nodemailer");
-const { google } = require("googleapis");
-require('dotenv').config()
+import nodemailer from 'nodemailer';
+import { google } from 'googleapis';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const CLIENT_EMAIL = process.env.GMAIL_ADDRESS; //your email from where you'll be sending emails to users
 const CLIENT_ID = process.env.GMAIL_OAUTH_CLIENT_ID; // Client ID generated on Google console cloud
@@ -27,6 +28,7 @@ signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
   userEmail = e.target.querySelector(".signup-form-input").value;
   console.log(userEmail);
+  console.log(APP_ID);
 });
 
 document.querySelector(".menu").addEventListener("click", () => {
