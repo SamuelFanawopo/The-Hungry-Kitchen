@@ -10,14 +10,6 @@ dotenv.config();
 const APP_ID = process.env.APP_ID; 
 const APP_key = process.env.APP_KEY;
 
-const oAuth2Client = new google.auth.OAuth2(
-  CLIENT_ID,
-  CLEINT_SECRET,
-  REDIRECT_URI
-);
-
-oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
-
 signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
   userEmail = e.target.querySelector(".signup-form-input").value;
@@ -30,8 +22,6 @@ document.querySelector(".menu").addEventListener("click", () => {
     item.classList.toggle("change");
   });
 });
-
-
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
