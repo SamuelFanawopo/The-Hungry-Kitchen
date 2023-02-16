@@ -12,9 +12,6 @@ const CLEINT_SECRET = "YOUR CLIENT SECRET";
 const REDIRECT_URI = "https://developers.google.com/oauthplayground";
 const REFRESH_TOKEN = "YOUR REFRESH TOKEN";
 
-const APP_ID = "cea45f1d";
-const APP_key = "6bef5531ed46bbf0c6d5a2abc08cae37";
-
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
   CLEINT_SECRET,
@@ -68,7 +65,7 @@ async function sendMail() {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "enzymeequity123@gmail.com",
+        user: "",
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -77,7 +74,7 @@ async function sendMail() {
     });
 
     const mailOptions = {
-      from: "THEHUNGRYKITCHEN <enzymeequity123@gmail.com>",
+      from: "THEHUNGRYKITCHEN <test@gmail.com>",
       to: userEmail,
       subject: "The Hungry Kitchen",
       text: "You have signed up to receive updates when there are any new changes on the website. Thanks for supporting the website!",
