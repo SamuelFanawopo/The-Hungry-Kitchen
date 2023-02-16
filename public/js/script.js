@@ -8,23 +8,27 @@ const container = document.querySelector(".container");
 const signupForm = document.querySelector(".signup-form");
 let searchQuery = "";
 
+// email signup form
 signupForm.addEventListener("submit", (e) => {
   e.preventDefault();
   userEmail = e.target.querySelector(".signup-form-input").value;
+  // in the future insert these values into a database
   console.log(userEmail);
-  console.log(APP_ID);
 });
 
+// navbar menu
 document.querySelector(".menu").addEventListener("click", () => {
   document.querySelectorAll(".target").forEach((item) => {
     item.classList.toggle("change");
   });
 });
 
+// save the value of the search and open a new
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   searchQuery = e.target.querySelector(".search").value;
-  window.open("../screens/results_page.html"); // trying to display results on results page
+  window.close();
+  window.open("../screens/recipe-search.html"); // trying to display results on results page
   fetchAPI();
 });
 
@@ -57,6 +61,8 @@ function generateHTML(results) {
   });
   searchResultDiv.innerHTML = generatedHTML;
 }
+
+// icon slideshow
 
 const icons = document.querySelectorAll(".section-1-icons i");
 let i = 1;
