@@ -51,3 +51,5 @@ function generateHTML(results) {
   });
   searchResultDiv.innerHTML = generatedHTML;
 }
+
+module.exports = searchQuery;
