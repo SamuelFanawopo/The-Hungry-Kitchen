@@ -12,8 +12,3 @@ npm run compile and devStart
 
 
 ![Screenshot from 2023-03-04 15-37-01](https://user-images.githubusercontent.com/92785438/222915088-0a72c820-f028-441f-ac8c-41a2b6d357b1.png)
-
-
-npm run compile and devStart
-
-
