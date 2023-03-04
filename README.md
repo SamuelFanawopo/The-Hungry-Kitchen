@@ -5,7 +5,8 @@ npm init
 
 npm install sass
 
-![Screenshot from 2023-01-29 12-11-48](https://user-images.githubusercontent.com/92785438/215325323-649803cc-c82c-4833-8474-d1655c41df06.png)
+![Screenshot from 2023-03-04 15-37-01](https://user-images.githubusercontent.com/92785438/222915088-0a72c820-f028-441f-ac8c-41a2b6d357b1.png)
+
 
 (Configure the input file, and output file, where the sass code will be compiled to css for the browser to understand)
 
