@@ -10,6 +10,6 @@ npm install sass
 
 (Configure the input file, and output file, where the sass code will be compiled to css for the browser to understand)
 
-npm run compile
+npm run compile and devStart
 
 (To view the real-time compiled changes when developing)
