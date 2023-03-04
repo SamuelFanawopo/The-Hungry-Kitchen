@@ -1,5 +1,5 @@
 # The-Hungry-Kitchen
-Recipe website developed in HTML SASS and Javascript with API'S
+Responsive recipe website using HTML, CSS, SASS, JavaScript, NodeJS, RecipeSearchAPI, Nodemailer, MongoDB, and Express. Created a homepage with popular meals, gallery, and email sign-up sections. Developed recipe search field and displayed recipes with calories and allergen info. Utilized Nodemailer for email communication and MongoDB to store user emails 
 
 npm init 
 
