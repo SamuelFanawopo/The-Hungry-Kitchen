@@ -16,4 +16,4 @@ npm run compile and devStart
 
 npm run compile and devStart
 
-(To view the real-time compiled changes when developing)
+
