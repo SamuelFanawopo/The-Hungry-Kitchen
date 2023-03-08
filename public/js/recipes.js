@@ -1,4 +1,5 @@
 // for recipes api
+/*
 const APP_ID = "cea45f1d";
 const APP_KEY = "6bef5531ed46bbf0c6d5a2abc08cae37";
 
@@ -53,3 +54,4 @@ function generateHTML(results) {
 }
 
 module.exports = searchQuery;
+*/

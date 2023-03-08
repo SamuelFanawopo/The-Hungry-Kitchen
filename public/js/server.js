@@ -5,6 +5,7 @@ require("dotenv").config();
 
 app.set("views", "./public/views");
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
 
@@ -19,14 +20,14 @@ app.post("/signup", async (req, res) => {
     };
 
     await connectDB.insertMany([data]);
-    res.send(
-      "You have successfully signed up to be notified of any updates to the website - We promise we don't spam. "
-    );
+    console.log("user added to the database");
+    res.render("success");
   } catch {
-    res.send("Email is already in use, try again!");
+    console.log("user failed to be added to the database");
+    res.render("failed");
   }
 });
 
-app.listen(5000, () => {
-  console.log("port connected");
-});
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, console.log(`Server running on port ${PORT}`));
