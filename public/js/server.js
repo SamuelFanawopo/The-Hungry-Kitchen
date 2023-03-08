@@ -1,11 +1,9 @@
 const express = require("express");
-const connectDB = require("../config/db");
 const emailRouter = require("../routes/emails");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const app = express();
-require('dotenv').config();
-
-connectDB();
+const connectDB = require("../config/db");
+require("dotenv").config();
 
 app.set("views", "./public/views");
 app.set("view engine", "ejs");
@@ -17,4 +15,15 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.listen(5000);
+app.post("/signup", async (req, res) => {
+  const data = {
+    email: req.body.email,
+  };
+  
+  await connectDB.insertMany([data]);
+  res.render("add-user-success");
+});
+
+app.listen(5000, () => {
+  console.log("port connected");
+});
