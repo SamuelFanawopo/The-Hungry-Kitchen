@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>The Hungry Kitchen</title>
   </head>
   <body>
@@ -59,7 +59,7 @@
           />
           <button type="submit" class="search-btn">
             <i class="fa fa-search"></i>
-          </button> 
+          </button>
         </form>
       </section>
       <!-- End Section 1 -->
@@ -165,9 +165,10 @@
             BE THE FIRST TO KNOW ABOUT ANY UPDATES AND CHANGES
           </p>
         </div>
-        <form class="signup-form" action="../screens/201_status.html" method="get">
+        <form class="signup-form" action="/signup" method="post">
           <input
             type="email"
+            name="email"
             class="signup-form-input"
             placeholder="Enter Your Email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"

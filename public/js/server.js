@@ -1,20 +1,33 @@
 const express = require("express");
-const connectDB = require("../config/db");
-const emailRouter = require("../routes/emails");
-const bodyParser = require('body-parser');
 const app = express();
-require('dotenv').config();
-
-connectDB();
+const connectDB = require("../config/db");
+require("dotenv").config();
 
 app.set("views", "./public/views");
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
+
 app.set("view engine", "ejs");
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/emails", emailRouter);
-
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("home");
 });
 
-app.listen(5000);
+app.post("/signup", async (req, res) => {
+  try {
+    const data = {
+      email: req.body.email,
+    };
+
+    await connectDB.insertMany([data]);
+    console.log("user added to the database");
+    res.render("success");
+  } catch {
+    console.log("user failed to be added to the database");
+    res.render("failed");
+  }
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, console.log(`Server running on port ${PORT}`));
