@@ -4,6 +4,8 @@ const connectDB = require("../config/db");
 require("dotenv").config();
 
 app.set("views", "./public/views");
+app.use(express.static("public"));
+
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
