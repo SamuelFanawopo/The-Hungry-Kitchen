@@ -12,4 +12,5 @@ install dependencies:
 npm run compile and devStart
 
 
-![Screenshot from 2023-03-04 15-37-01](https://user-images.githubusercontent.com/92785438/222915088-0a72c820-f028-441f-ac8c-41a2b6d357b1.png)
+![Screenshot from 2023-03-09 20-45-54](https://user-images.githubusercontent.com/92785438/224153443-6357da50-a02d-47af-b5f6-dc7f0ea422db.png)
+
