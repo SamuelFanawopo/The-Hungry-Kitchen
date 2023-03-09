@@ -6,10 +6,13 @@ npm init
 install dependencies:
 
 
+
 ![Screenshot from 2023-03-09 20-44-27](https://user-images.githubusercontent.com/92785438/224153158-1424f3d7-61a2-4f8d-b324-f5e2aedb4dc7.png)
 
 
+
 npm run compile and devStart
+
 
 
 ![Screenshot from 2023-03-09 20-45-54](https://user-images.githubusercontent.com/92785438/224153443-6357da50-a02d-47af-b5f6-dc7f0ea422db.png)
