@@ -23,13 +23,6 @@ app.post("/signup", async (req, res) => {
     await connectDB.insertMany([data]);
     console.log("user added to the database");
 
-    res.render("success");
-  } catch {
-    console.log("user failed to be added to the database");
-    res.render("failed");
-  }
-
-  try {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
       host: "smtp.office365.com",
@@ -44,21 +37,18 @@ app.post("/signup", async (req, res) => {
     let info = await transporter.sendMail({
       from: `"noreply@thehungrykitchen" <${process.env.EMAIL_USERNAME}>`, // sender address
       to: `${req.body.email}`, // list of receivers
-      subject: "The Hungry Kitchen", // Subject line
+      subject: "TheHungryKitchen", // Subject line
       text: "This is a confirmation message for you successfully signing up to recive news about any updates or changes to the website", // plain text body
       html: "<b>This is a confirmation message for you successfully signing up to recive news about any updates or changes to the website</b>", // html body
     });
 
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+    console.log("message sent");
 
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    res.render("success");
   } catch {
-    
+    console.log("user failed to be added to the database");
+    res.render("failed");
   }
-
 });
 
 const PORT = process.env.PORT || 5000;
