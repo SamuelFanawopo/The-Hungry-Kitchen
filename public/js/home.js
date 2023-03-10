@@ -1,5 +1,3 @@
-// for recipes api
-/*
 // navbar menu
 document.querySelector(".menu").addEventListener("click", () => {
   document.querySelectorAll(".target").forEach((item) => {
@@ -24,4 +22,3 @@ setInterval(() => {
     icon.nextElementSibling.classList.add("change");
   }
 }, 4000);
-*/
