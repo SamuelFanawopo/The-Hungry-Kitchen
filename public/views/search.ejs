@@ -2,16 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TheHungryKitchen</title>
   </head>
   <body>
     <h1>Search Results:</h1>
-    <ul>
-      <% for (let recipe of recipes) { %>
-      <li><%= recipe.recipe.label %></li>
-      <% } %>
-    </ul>
+    <% recipes.forEach((recipe) => { %>
+    <div class="item">
+      <img src="<%= recipe.recipe.image %>" alt="img" />
+      <div class="flex-container">
+        <h1 class="title"><%= recipe.recipe.label %></h1>
+        <a class="view-btn" target="_blank" href="<%= recipe.recipe.url %>"
+          >View Recipe</a
+        >
+      </div>
+      <p class="item-data">
+        Calories: <%= recipe.recipe.calories.toFixed(2) %>
+      </p>
+      <p class="item-data">
+        Diet label: <%= recipe.recipe.dietLabels.length > 0 ?
+        recipe.recipe.dietLabels : 'No Data Found' %>
+      </p>
+      <p class="item-data">Health labels: <%= recipe.recipe.healthLabels %></p>
+    </div>
+    <% }) %>
   </body>
 </html>
