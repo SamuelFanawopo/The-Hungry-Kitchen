@@ -14,6 +14,24 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.post("/search", async (req, res) => {
+  const app_ID = process.env.APP_ID;
+  const app_key = process.env.APP_KEY;
+  const search = req.body.search;
+
+  try {
+    const baseURL = `https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=${app_ID}&app_key=${app_key}`;
+    const fetch = (...args) =>
+      import("node-fetch").then(({ default: fetch }) => fetch(...args));
+    const response = await fetch(baseURL);
+    const data = await response.json();
+    res.render("search", { recipes: data.hits });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Invalid Search");
+  }
+});
+
 app.post("/signup", async (req, res) => {
   try {
     const data = {
