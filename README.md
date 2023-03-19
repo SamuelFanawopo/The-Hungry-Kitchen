@@ -7,7 +7,8 @@ install dependencies:
 
 
 
-![Screenshot from 2023-03-09 20-44-27](https://user-images.githubusercontent.com/92785438/224153158-1424f3d7-61a2-4f8d-b324-f5e2aedb4dc7.png)
+file:///home/sam/Pictures/Screenshot%20from%202023-03-19%2016-40-03.png![image](https://user-images.githubusercontent.com/92785438/226191233-923f0d2c-4086-485c-a7d8-bc0a7437263f.png)
+
 
 
 
