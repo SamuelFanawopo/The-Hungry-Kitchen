@@ -74,6 +74,18 @@ html {
   font-size: 20px;
 }
 
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .search-box {
+    top: 64px;
+  }
+  .search {
+    font-size: 2rem;
+  }
+  .search-btn {
+    font-size: 16px;
+  }
+}
 /* Navbar */
 .navbar {
   width: 100%;
@@ -205,6 +217,7 @@ html {
   transition: transform 0.3s 0.3s;
 }
 
+/* Section 2*/
 .section-2 {
   width: 100%;
   background-color: #222;
@@ -304,6 +317,7 @@ html {
   }
 }
 
+/* End of Section 2*/
 /* Section 3 */
 .gallery {
   display: flex;
