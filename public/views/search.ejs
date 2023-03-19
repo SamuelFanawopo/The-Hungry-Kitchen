@@ -25,6 +25,9 @@
         Diet label: <%= recipe.recipe.dietLabels.length > 0 ?
         recipe.recipe.dietLabels : 'No Data Found' %>
       </p>
+      <p class="item-data">
+        Health labels: <%= recipe.recipe.healthLabels.join(', ') %>
+      </p>
     </div>
     <% }) %>
   </body>
