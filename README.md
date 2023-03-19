@@ -7,7 +7,7 @@ install dependencies:
 
 
 
-file:///home/sam/Pictures/Screenshot%20from%202023-03-19%2016-40-03.png![image](https://user-images.githubusercontent.com/92785438/226191233-923f0d2c-4086-485c-a7d8-bc0a7437263f.png)
+(https://user-images.githubusercontent.com/92785438/226191233-923f0d2c-4086-485c-a7d8-bc0a7437263f.png)
 
 
 
