@@ -1,0 +1,73 @@
+/* Set global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the recipe image */
+.item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the recipe title */
+.title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+/* Style the "View Recipe" button */
+.view-btn {
+  display: block;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.view-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the recipe data */
+.item-data {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+/* Style the diet label if no data is found */
+.item-data:empty:before {
+  content: "No Data Found";
+  color: #ccc;
+}
+  
+/* Make the flex-container a flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

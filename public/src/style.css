@@ -24,16 +24,6 @@ html {
   justify-content: space-evenly;
 }
 
-.section-2 {
-  width: 100%;
-  height: 100vh;
-  background-color: #222;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10rem 0;
-}
-
 .section-3 {
   background-color: #333;
   padding: 5rem 0;
@@ -84,6 +74,18 @@ html {
   font-size: 20px;
 }
 
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .search-box {
+    top: 64px;
+  }
+  .search {
+    font-size: 2rem;
+  }
+  .search-btn {
+    font-size: 16px;
+  }
+}
 /* Navbar */
 .navbar {
   width: 100%;
@@ -215,11 +217,48 @@ html {
   transition: transform 0.3s 0.3s;
 }
 
-/* Section 2 */
+/* Section 2*/
+.section-2 {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+@media screen and (max-width: 768px) {
+  .section-2 {
+    padding: 5rem 0;
+  }
+}
+
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  /* padding: 0 5%; */
+  gap: 2rem;
+  padding: 0 5%;
+}
+@media screen and (max-width: 768px) {
+  .cards-container {
+    gap: 1rem;
+    padding: 0;
+  }
+}
+
+.card {
+  width: calc(33.3333333333% - 2rem);
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0.15rem 0.15rem 0.15rem #000;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
 }
 
 .card-img {
@@ -236,6 +275,25 @@ html {
   margin: 2rem 0;
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
 }
+@media screen and (max-width: 768px) {
+  .card-name {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+
+.card-data {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .card-data {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+}
 
 .card-btn {
   width: 70%;
@@ -250,8 +308,16 @@ html {
   padding: 0.5rem 0;
   cursor: pointer;
   box-shadow: -0.2rem -0.2rem 0.2rem #000;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .card-btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
 }
 
+/* End of Section 2*/
 /* Section 3 */
 .gallery {
   display: flex;
