@@ -8,32 +8,6 @@
     <title>The Hungry Kitchen</title>
   </head>
   <body>
-    <!-- Navbar  -->
-    <nav class="navbar target">
-      <a href="#home" class="navbar-link">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-      </a>
-      <a href="#recipes" class="navbar-link">
-        <i class="fa-solid fa-pizza-slice"></i>
-        <span>Recipes</span>
-      </a>
-      <a href="#popular-meals" class="navbar-link">
-        <i class="fa-solid fa-fire"></i>
-        <span>Popular Meals</span>
-      </a>
-      <a href="#gallery" class="navbar-link">
-        <i class="fa-solid fa-film"></i>
-        <span>Gallery</span>
-      </a>
-      <a href="#sign-up" class="navbar-link">
-        <i class="fa-solid fa-address-book"></i>
-        <span>Sign up</span>
-      </a>
-    </nav>
-    <div class="menu target"></div>
-    <!-- End of Navbar  -->
-
     <div class="container">
       <!-- Section 1 -->
       <section class="section-1">
@@ -66,107 +40,74 @@
       <!-- End Section 1 -->
       <!-- Section 2 -->
       <section class="section-2">
-        <h1 class="section-heading popular-meals">popular meals</h1>
+        <h1 class="section-heading popular-meals">popular recipes</h1>
         <div class="cards-container">
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 300</p>
-            <p class="card-data">Diet Label: Low Carb</p>
-            <p class="card-data">Health Labels: Gluten Free, Paleo</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[nums[0]].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[nums[0]].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[nums[0]].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[nums[0]].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[nums[0]].recipe.healthLabels.join(", ")
+              %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[nums[0]].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 450</p>
-            <p class="card-data">Diet Label: Vegetarian</p>
-            <p class="card-data">Health Labels: High Fiber</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[nums[1]].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[nums[1]].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[nums[1]].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[nums[1]].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[nums[1]].recipe.healthLabels.join(", ")
+              %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[nums[1]].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 250</p>
-            <p class="card-data">Diet Label: None</p>
-            <p class="card-data">Health Labels: Low Sodium</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[nums[2]].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[nums[2]].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[nums[2]].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[nums[2]].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[nums[2]].recipe.healthLabels.join(", ")
+              %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[nums[2]].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
         </div>
       </section>
       <!-- End of Section 2 -->
-
-      <!-- Section 3 -->
-      <section class="section-3">
-        <h1 class="section-heading">Gallery</h1>
-        <div class="gallery">
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Pancakes</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Cupcakes</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Hummus</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Hamburger</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Salmon</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-          <a href="#" class="gallery-link" title="View Recipe">
-            <img src="../assets/images/temp-meal.jpg" class="food-img" />
-            <h3 class="food-name">Vegetables</h3>
-            <p class="food-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              commodi possimus iure hic excepturi. Corporis!
-            </p>
-          </a>
-        </div>
-      </section>
-      <!-- End of Section 3 -->
-      <!-- For the form section to an API get email request, and save it to a database in postman -->
       <!-- Section 4 -->
       <section class="section-4">
         <div class="section-4-text">
