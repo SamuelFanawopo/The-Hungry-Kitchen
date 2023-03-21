@@ -15,13 +15,12 @@ app.get("/", async (req, res) => {
   const app_key = process.env.APP_KEY;
   const search = "n";
 
-  const num1 = Math.floor(Math.random() * 16);
-  let num2 = Math.floor(Math.random() * 16);
-  let num3 = Math.floor(Math.random() * 16);
-
-  while (num1 === num2 || num1 === num3 || num2 === num3) {
-    num2 = Math.floor(Math.random() * 16);
-    num3 = Math.floor(Math.random() * 16);
+  const nums = [];
+  while (nums.length < 3) {
+    const newNum = Math.floor(Math.random() * 16);
+    if (!nums.includes(newNum)) {
+      nums.push(newNum);
+    }
   }
 
   try {
@@ -32,9 +31,7 @@ app.get("/", async (req, res) => {
     const data = await response.json();
 
     const parameters = {
-      num1: num1,
-      num2: num2,
-      num3: num3,
+      nums: nums,
       recipes: data.hits, // your recipe data here
     };
 
