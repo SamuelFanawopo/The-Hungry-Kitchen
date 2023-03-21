@@ -304,11 +304,15 @@ html {
   font-weight: 800;
   letter-spacing: 0.2rem;
   text-transform: capitalize;
-  border: none;
   padding: 0.5rem 0;
   cursor: pointer;
   box-shadow: -0.2rem -0.2rem 0.2rem #000;
   margin-top: 2rem;
+  /* Inherit properties from anchor tag */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #aaa;
 }
 @media screen and (max-width: 768px) {
   .card-btn {

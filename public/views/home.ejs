@@ -66,46 +66,67 @@
       <!-- End Section 1 -->
       <!-- Section 2 -->
       <section class="section-2">
-        <h1 class="section-heading popular-meals">popular meals</h1>
+        <h1 class="section-heading popular-meals">popular recipes</h1>
         <div class="cards-container">
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 300</p>
-            <p class="card-data">Diet Label: Low Carb</p>
-            <p class="card-data">Health Labels: Gluten Free, Paleo</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[num1].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[num1].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[num1].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[num1].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[num1].recipe.healthLabels.join(", ") %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[num1].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 450</p>
-            <p class="card-data">Diet Label: Vegetarian</p>
-            <p class="card-data">Health Labels: High Fiber</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[num2].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[num2].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[num2].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[num2].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[num2].recipe.healthLabels.join(", ") %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[num2].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
           <div class="card">
-            <img
-              src="../assets/images/temp-meal.jpg"
-              class="card-img"
-              width="230"
-              height="230"
-            />
-            <h3 class="card-name">temp</h3>
-            <p class="card-data">Calories: 250</p>
-            <p class="card-data">Diet Label: None</p>
-            <p class="card-data">Health Labels: Low Sodium</p>
-            <button class="card-btn">View Recipe</button>
+            <img src="<%= recipes[num3].recipe.image %>" class="card-img" />
+            <h3 class="card-name"><%= recipes[num3].recipe.label %></h3>
+            <p class="card-data">
+              Calories: <%= Math.round(recipes[num3].recipe.calories) %>
+            </p>
+            <p class="card-data">
+              Diet Label: <%= recipes[num3].recipe.dietLabels[0] %>
+            </p>
+            <p class="card-data">
+              Health Labels: <%= recipes[num3].recipe.healthLabels.join(", ") %>
+            </p>
+            <a
+              class="card-btn"
+              target="_blank"
+              href="<%= recipes[num3].recipe.url %>"
+            >
+              View Recipe
+            </a>
           </div>
         </div>
       </section>

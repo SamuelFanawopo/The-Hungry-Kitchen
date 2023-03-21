@@ -10,8 +10,39 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
-  res.render("home");
+app.get("/", async (req, res) => {
+  const app_ID = process.env.APP_ID;
+  const app_key = process.env.APP_KEY;
+  const search = "n";
+
+  const num1 = Math.floor(Math.random() * 16);
+  let num2 = Math.floor(Math.random() * 16);
+  let num3 = Math.floor(Math.random() * 16);
+
+  while (num1 === num2 || num1 === num3 || num2 === num3) {
+    num2 = Math.floor(Math.random() * 16);
+    num3 = Math.floor(Math.random() * 16);
+  }
+
+  try {
+    const baseURL = `https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=${app_ID}&app_key=${app_key}`;
+    const fetch = (...args) =>
+      import("node-fetch").then(({ default: fetch }) => fetch(...args));
+    const response = await fetch(baseURL);
+    const data = await response.json();
+
+    const parameters = {
+      num1: num1,
+      num2: num2,
+      num3: num3,
+      recipes: data.hits, // your recipe data here
+    };
+
+    res.render("home", parameters);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Invalid Search");
+  }
 });
 
 app.post("/search", async (req, res) => {
