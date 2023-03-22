@@ -1,5 +1,5 @@
 # The-Hungry-Kitchen
-Recipe search website using EJS, SASS, JavaScript, NodeJS, RecipeSearchAPI, Nodemailer, MongoDB, and Express. Created a homepage with popular meals, gallery, and email sign-up sections. Developed recipe search field and displayed recipes with calories and allergen info. Utilized Nodemailer for email communication and MongoDB to store user emails 
+Recipe search website using EJS, SASS, JavaScript, NodeJS, RecipeSearchAPI, Nodemailer, MongoDB, Express. Created a homepage with popular meals and email sign-up sections. Developed a recipe search field and displayed recipes with calories, diet, and health labels. Utilized Nodemailer to send email notifications and stored user emails in MongoDB 
 
 npm init 
 
