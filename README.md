@@ -13,7 +13,7 @@ install dependencies:
 
 
 
-npm run compile and devStart
+Scripts
 
 
 
