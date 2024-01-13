@@ -1,11 +1,11 @@
 {
   "name": "the-hungry-kitchen",
   "version": "1.0.0",
-  "description": "Recipe website developed in HTML SASS and Javascript with API's ",
+  "description": "Recipe website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass --watch --no-source-map ./public/scss/main.scss ./public/src/style.css",
+    "compile": "sass --watch --no-source-map ./public/scss/main.scss ./public/css/style.css",
     "start": "node ./public/js/server.js",
     "dev": "npx nodemon ./public/js/server.js"
   },
