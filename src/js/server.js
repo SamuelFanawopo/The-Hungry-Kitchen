@@ -1,10 +1,11 @@
 const express = require("express");
+const path = require("path");
 const nodemailer = require("nodemailer");
 const app = express();
 const connectDB = require("../config/db");
 require("dotenv").config();
 
-app.set("views", "./src/views");
+app.set("views", path.join(__dirname, "../views"));
 app.use(express.static("src"));
 app.use(express.urlencoded({ extended: false }));
 
@@ -99,4 +100,5 @@ app.post("/signup", async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
+console.log("Views directory:", path.join(__dirname, "../views"));
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
