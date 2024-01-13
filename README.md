@@ -13,6 +13,8 @@ The-Hungry-Kitchen is a recipe search website that allows users to discover reci
 
 You can try out a live demo of the application here: [The-Hungry-Kitchen Live](https://thehungrykitchen.cyclic.app/)
 
+![logo](https://github.com/SamuelFanawopo/The-Hungry-Kitchen/assets/92785438/7cded689-da9f-431f-a9a2-76c685e5a883)
+
 ## Installation
 
 To get a local copy up and running follow these simple steps.
