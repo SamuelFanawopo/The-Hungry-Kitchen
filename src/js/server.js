@@ -100,5 +100,4 @@ app.post("/signup", async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-console.log("Views directory:", path.join(__dirname, "../views"));
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
