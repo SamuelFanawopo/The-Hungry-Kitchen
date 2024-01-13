@@ -1,22 +1,60 @@
 # The-Hungry-Kitchen
-Recipe search website using EJS, SASS, JavaScript, NodeJS, RecipeSearchAPI, Nodemailer, MongoDB, Express. Created a homepage with popular meals and email sign-up sections. Developed a recipe search field and displayed recipes with calories, diet, and health labels. Utilized Nodemailer to send email notifications and stored user emails in MongoDB 
 
-npm init 
+The-Hungry-Kitchen is a recipe search website that allows users to discover recipes based on their dietary preferences and health considerations. Built with EJS, SASS, JavaScript, Node.js, RecipeSearchAPI, Nodemailer, MongoDB, and Express, it offers a rich user experience with a functional and intuitive interface.
 
-install dependencies:
+## Features
 
+- Home page with popular meals and email sign-up section.
+- Recipe search functionality that displays recipes with details like calories, diet, and health labels.
+- Email notifications for updates and news via Nodemailer.
+- User email storage in MongoDB for future marketing and information dissemination.
 
+## Live Demo
 
-![image](https://user-images.githubusercontent.com/92785438/226191302-332ce849-12e6-4668-a04b-85cb1e6d4b96.png)
+You can try out a live demo of the application here: [The-Hungry-Kitchen Live](https://thehungrykitchen.cyclic.app/)
 
+## Installation
 
+To get a local copy up and running follow these simple steps.
 
+1. Clone the repository:
 
+```bash
+git clone https://github.com/SamuelFanawopo/The-Hungry-Kitchen.git
+cd The-Hungry-Kitchen
+```
 
-Scripts
+2. Install NPM packages:
 
+```bash
+npm install
+```
 
+## Usage
 
+To start the server, run:
 
+```bash
+npm start
+```
 
-![image](https://user-images.githubusercontent.com/92785438/227024691-617955c7-a499-4486-b256-37ed8486a442.png)
+For development, you can use the nodemon server with:
+
+```bash
+npm run dev
+```
+
+## License
+
+The Hungry Kitchen is open-sourced under the MIT License. Feel free to contribute, fork, and adapt it for your personal or professional projects.
+
+## Acknowledgements
+
+- [EJS](https://github.com/mde/ejs) - For the embedded JavaScript templates enabling dynamic content rendering.
+- [SASS](https://github.com/sass/sass) - For the powerful CSS extension language that simplifies styling.
+- [Node.js](https://github.com/nodejs/node) - The JavaScript runtime that powers the server-side logic.
+- [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api) - For providing an extensive recipe database and search functionality.
+- [Nodemailer](https://github.com/nodemailer/nodemailer) - For enabling email sending capabilities within the application.
+- [MongoDB](https://github.com/mongodb/mongo) - For the scalable, high-performance NoSQL database.
+- [Express](https://github.com/expressjs/express) - The fast and minimalist web framework for Node.js applications.
+
